@@ -6,9 +6,9 @@
 
     <color name="default_calendar_background_color">@android:color/white</color>
     <color name="default_month_text_color">#595f66</color>
-    <color name="default_other_day_text_color">#c9cacd</color>
+    <color name="default_other_day_text_color">#00000000</color>
     <color name="default_day_text_color">#4a4a4a</color>
-    <color name="default_weekend_day_text_color">#00cf78</color>
+    <color name="default_weekend_day_text_color">#4a4a4a</color>
     <color name="default_week_day_title_text_color">#91959b</color>
     <color name="default_selected_day_text_color">@android:color/white</color>
     <color name="default_selected_day_background_color">#33d993</color>
