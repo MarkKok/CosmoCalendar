@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.animation.Interpolator;
 
+@Deprecated
 public class SlowdownRecyclerView extends RecyclerView {
 
     // Change pow to control speed.
