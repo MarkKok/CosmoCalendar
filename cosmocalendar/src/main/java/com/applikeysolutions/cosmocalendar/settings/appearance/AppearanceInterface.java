@@ -2,6 +2,10 @@ package com.applikeysolutions.cosmocalendar.settings.appearance;
 
 public interface AppearanceInterface {
 
+    int getMaxFutureMonth();
+
+    int getMaxPastMonth();
+
     int getCalendarBackgroundColor();
 
     int getMonthTextColor();
@@ -47,6 +51,10 @@ public interface AppearanceInterface {
     boolean isShowDaysOfWeek();
 
     boolean isShowDaysOfWeekTitle();
+
+    void setMaxFutureMonth(int maxFutureMonth);
+
+    void setMaxPastMonth(int maxPastMonth);
 
     void setCalendarBackgroundColor(int calendarBackgroundColor);
 

@@ -97,11 +97,11 @@ public final class CalendarUtils {
         final List<Month> months = new ArrayList<>();
 
         final Calendar calendar = Calendar.getInstance();
-        for (int i = 0; i < SettingsManager.DEFAULT_MONTH_COUNT / 2; i++) {
-            calendar.add(Calendar.MONTH, -1);
-        }
+        calendar.add(Calendar.MONTH, -settingsManager.getMaxPastMonth());
 
-        for (int i = 0; i < SettingsManager.DEFAULT_MONTH_COUNT; i++) {
+        int maxCalendarLength = settingsManager.getMaxPastMonth() + settingsManager.getMaxFutureMonth();
+
+        for (int i = 0; i < maxCalendarLength; i++) {
             months.add(createMonth(calendar.getTime(), settingsManager));
             DateUtils.addMonth(calendar);
         }
@@ -158,7 +158,9 @@ public final class CalendarUtils {
         }
 
         if (settingsManager.getDisabledDays() != null) {
-            day.setDisabled(isDayInSet(day, settingsManager.getDisabledDays()));
+            day.setDisabled(isDayInSet(day, settingsManager.getDisabledDays()) || day.getCalendar().before(Calendar.getInstance()));
+        }else{
+            day.setDisabled(day.getCalendar().before(Calendar.getInstance()));
         }
 
         if (settingsManager.getDisabledDaysCriteria() != null) {

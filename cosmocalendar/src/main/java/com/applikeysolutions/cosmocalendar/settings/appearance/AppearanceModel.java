@@ -2,6 +2,10 @@ package com.applikeysolutions.cosmocalendar.settings.appearance;
 
 public class AppearanceModel implements AppearanceInterface {
 
+    private int maxFutureMonth;
+
+    private int maxPastMonth;
+
     //Background color of whole calendar
     private int calendarBackgroundColor;
 
@@ -76,6 +80,16 @@ public class AppearanceModel implements AppearanceInterface {
     //Defines if we need to display week day title for whole calendar
     private boolean showDaysOfWeekTitle;
 
+
+    @Override
+    public int getMaxFutureMonth() {
+        return maxFutureMonth;
+    }
+
+    @Override
+    public int getMaxPastMonth() {
+        return maxPastMonth;
+    }
 
     @Override
     public int getCalendarBackgroundColor() {
@@ -190,6 +204,16 @@ public class AppearanceModel implements AppearanceInterface {
     @Override
     public boolean isShowDaysOfWeekTitle() {
         return showDaysOfWeekTitle;
+    }
+
+    @Override
+    public void setMaxFutureMonth(int maxFutureMonth) {
+        this.maxFutureMonth = maxFutureMonth;
+    }
+
+    @Override
+    public void setMaxPastMonth(int maxPastMonth) {
+        this.maxPastMonth = maxPastMonth;
     }
 
     @Override

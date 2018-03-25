@@ -22,7 +22,8 @@ import java.util.Set;
 public class SettingsManager implements AppearanceInterface, DateInterface, CalendarListsInterface, SelectionInterface {
 
     //Default values
-    public static final int DEFAULT_MONTH_COUNT = 20;
+    public static final int DEFAULT_MAX_FUTURE_MONTH = 6;
+    public static final int DEFAULT_MAX_PAST_MONTH = 0;
     public static final int DEFAULT_SELECTION_TYPE = SelectionType.SINGLE;
     public static final int DEFAULT_FIRST_DAY_OF_WEEK = Calendar.MONDAY;
     public static final int DEFAULT_ORIENTATION = LinearLayoutManager.VERTICAL;
@@ -50,6 +51,22 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     @Override
     public void setSelectionType(@SelectionType int selectionType) {
         selectionModel.setSelectionType(selectionType);
+    }
+
+    @Override
+    public int getMaxFutureMonth() {
+        if(appearanceModel.getMaxFutureMonth() == 0)
+            return DEFAULT_MAX_FUTURE_MONTH;
+        else
+            return appearanceModel.getMaxFutureMonth();
+    }
+
+    @Override
+    public int getMaxPastMonth() {
+        if(appearanceModel.getMaxPastMonth() == 0)
+            return DEFAULT_MAX_PAST_MONTH;
+        else
+            return appearanceModel.getMaxPastMonth();
     }
 
     @Override
@@ -165,6 +182,16 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     @Override
     public boolean isShowDaysOfWeekTitle() {
         return appearanceModel.isShowDaysOfWeekTitle();
+    }
+
+    @Override
+    public void setMaxFutureMonth(int maxFutureMonth) {
+        appearanceModel.setMaxFutureMonth(maxFutureMonth);
+    }
+
+    @Override
+    public void setMaxPastMonth(int maxPastMonth) {
+        appearanceModel.setMaxPastMonth(maxPastMonth);
     }
 
     @Override

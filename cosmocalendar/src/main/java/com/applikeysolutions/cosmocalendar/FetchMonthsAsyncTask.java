@@ -33,7 +33,7 @@ public class FetchMonthsAsyncTask extends AsyncTask<FetchMonthsAsyncTask.FetchPa
         final Calendar calendar = Calendar.getInstance();
         calendar.setTime(month.getFirstDay().getCalendar().getTime());
         final List<Month> result = new ArrayList<>();
-        for (int i = 0; i < SettingsManager.DEFAULT_MONTH_COUNT; i++) {
+        for (int i = 0; i < SettingsManager.DEFAULT_MAX_FUTURE_MONTH; i++) {
             if(isCancelled())
                 break;
 

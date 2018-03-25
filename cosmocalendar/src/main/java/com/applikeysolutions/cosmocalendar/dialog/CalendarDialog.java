@@ -114,6 +114,16 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getMaxFutureMonth() {
+        return calendarView.getMaxFutureMonth();
+    }
+
+    @Override
+    public int getMaxPastMonth() {
+        return calendarView.getMaxPastMonth();
+    }
+
+    @Override
     public int getCalendarBackgroundColor() {
         return calendarView.getCalendarBackgroundColor();
     }
@@ -226,6 +236,16 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     @Override
     public boolean isShowDaysOfWeekTitle() {
         return calendarView.isShowDaysOfWeekTitle();
+    }
+
+    @Override
+    public void setMaxFutureMonth(int maxFutureMonth) {
+        calendarView.setMaxFutureMonth(maxFutureMonth);
+    }
+
+    @Override
+    public void setMaxPastMonth(int maxPastMonth) {
+        calendarView.setMaxPastMonth(maxPastMonth);
     }
 
     @Override

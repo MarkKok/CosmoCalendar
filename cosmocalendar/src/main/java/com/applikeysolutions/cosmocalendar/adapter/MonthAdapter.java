@@ -154,7 +154,8 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthHolder> {
                             break;
 
                         case DISABLED:
-                            day.setDisabled(CalendarUtils.isDayInSet(day, days));
+                            if(!day.isDisabled())
+                                day.setDisabled(CalendarUtils.isDayInSet(day, days));
                             break;
 
                         case FROM_CONNECTED_CALENDAR:
