@@ -1,6 +1,6 @@
 package com.applikeysolutions.cosmocalendar.settings;
 
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.applikeysolutions.cosmocalendar.settings.appearance.AppearanceInterface;
 import com.applikeysolutions.cosmocalendar.settings.appearance.AppearanceModel;

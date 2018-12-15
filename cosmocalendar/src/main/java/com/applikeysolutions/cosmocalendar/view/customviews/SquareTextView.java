@@ -1,7 +1,7 @@
 package com.applikeysolutions.cosmocalendar.view.customviews;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatTextView;
+import androidx.appcompat.widget.AppCompatTextView;
 
 public class SquareTextView extends AppCompatTextView {
 

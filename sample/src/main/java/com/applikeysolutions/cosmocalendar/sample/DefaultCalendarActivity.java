@@ -1,11 +1,12 @@
 package com.applikeysolutions.cosmocalendar.sample;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.OrientationHelper;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.OrientationHelper;
+
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;

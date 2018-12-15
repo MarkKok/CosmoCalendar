@@ -1,6 +1,6 @@
 package com.applikeysolutions.cosmocalendar.selection;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.applikeysolutions.cosmocalendar.model.Day;
 
