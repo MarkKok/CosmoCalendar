@@ -24,7 +24,10 @@ public class TestActivity extends AppCompatActivity {
 
         disabledDays.add(1521974647046L);
         calendarView.setDisabledDays(disabledDays);
-        //calendarView.setDisabledDayTextColor(getResources().getColor(android.R.color.holo_red_light));
-        //calendarView.setOtherDayTextColor(getResources().getColor(android.R.color.transparent));
+        calendarView.setSelectedDayBackgroundColor(getResources().getColor(R.color.black));
+        calendarView.setSelectedDayBackgroundStartColor(getResources().getColor(R.color.black));
+        calendarView.setSelectedDayBackgroundEndColor(getResources().getColor(R.color.black));
+        calendarView.setDayTextColor(getResources().getColor(R.color.black));
+        calendarView.setSelectedDayTextColor(getResources().getColor(android.R.color.white));
     }
 }

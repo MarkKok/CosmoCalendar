@@ -11,16 +11,6 @@
         android:layout_height="48dp"
         android:orientation="horizontal">
 
-        <View
-            android:id="@+id/view_left_line"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/space_1x"
-            android:layout_marginRight="@dimen/space_1x"
-            android:layout_weight="1"
-            android:background="@color/default_border_color" />
-
         <TextView
             android:id="@+id/tv_month_name"
             android:layout_width="wrap_content"
@@ -29,17 +19,9 @@
             android:letterSpacing="0.1"
             android:textAllCaps="true"
             android:textSize="@dimen/text_big"
-            tools:text="April 2015" />
-
-        <View
-            android:id="@+id/view_right_line"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_gravity="center_vertical"
             android:layout_marginLeft="@dimen/space_1x"
             android:layout_marginRight="@dimen/space_1x"
-            android:layout_weight="1"
-            android:background="@color/default_border_color" />
+            tools:text="April 2015" />
 
     </LinearLayout>
 
