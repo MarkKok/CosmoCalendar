@@ -12,7 +12,8 @@
         android:gravity="center"
         android:padding="@dimen/day_text_padding"
         android:textColor="@color/default_other_day_text_color"
-        android:textSize="@dimen/day_text_size"
+        android:textSize="16sp"
+        android:fontFamily="@font/walsheim_medium"
         tools:text="10" />
 
 </FrameLayout>

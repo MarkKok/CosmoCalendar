@@ -29,5 +29,6 @@ public class TestActivity extends AppCompatActivity {
         calendarView.setSelectedDayBackgroundEndColor(getResources().getColor(R.color.black));
         calendarView.setDayTextColor(getResources().getColor(R.color.black));
         calendarView.setSelectedDayTextColor(getResources().getColor(android.R.color.white));
+        calendarView.setMonthTextColor(getResources().getColor(R.color.black));
     }
 }
